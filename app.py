@@ -7,7 +7,7 @@ next_id = 1
 
 @app.get("/health")
 def health():
-    return jsonify(status="ok"), 200
+    return jsonify(status="ok" , version="1.1"), 200
 
 
 @app.post("/tasks")
